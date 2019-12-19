@@ -1206,8 +1206,15 @@ void HWDeviceDRM::SetupAtomic(HWLayers *hw_layers, bool validate) {
     SetSolidfillStages();
     SetQOSData(qos_data);
     drm_atomic_intf_->Perform(DRMOps::CRTC_SET_SECURITY_LEVEL, token_.crtc_id, crtc_security_level);
-    sde_drm::DRMQsyncMode mode = hw_layers->hw_avr_info.enable ? sde_drm::DRMQsyncMode::CONTINUOUS :
-                                                                 sde_drm::DRMQsyncMode::NONE;
+  }
+
+  if (hw_layers->hw_avr_info.update) {
+    sde_drm::DRMQsyncMode mode = sde_drm::DRMQsyncMode::NONE;
+    if (hw_layers->hw_avr_info.mode == kContinuousMode) {
+      mode = sde_drm::DRMQsyncMode::CONTINUOUS;
+    } else if (hw_layers->hw_avr_info.mode == kOneShotMode) {
+      mode = sde_drm::DRMQsyncMode::ONESHOT;
+    }
     drm_atomic_intf_->Perform(DRMOps::CONNECTOR_SET_QSYNC_MODE, token_.conn_id, mode);
   }
 
@@ -1945,6 +1952,7 @@ void HWDeviceDRM::UpdateMixerAttributes() {
   mixer_attributes_.split_left = display_attributes_[index].is_device_split
                                      ? hw_panel_info_.split_info.left_split
                                      : mixer_attributes_.width;
+  mixer_attributes_.mixer_index = token_.crtc_index;
   DLOGI("Mixer WxH %dx%d for %s", mixer_attributes_.width, mixer_attributes_.height, device_name_);
   update_mode_ = true;
 }
