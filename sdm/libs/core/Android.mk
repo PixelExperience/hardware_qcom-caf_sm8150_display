@@ -24,6 +24,9 @@ endif
 
 ifeq ($(ENABLE_HYP),true)
     LOCAL_CFLAGS += -DHYPERVISOR
+		
+ifeq ($(TARGET_USES_FOD_ZPOS), true)
+    LOCAL_CFLAGS                  += -DFOD_ZPOS
 endif
 
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
