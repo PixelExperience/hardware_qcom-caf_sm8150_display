@@ -40,6 +40,10 @@ LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdMetaData libdl  \
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdgralloc\" -Wno-sign-conversion \
                                  -D__QTI_DISPLAY_GRALLOC__
 
+ifeq ($(TARGET_NEEDS_RAW10_BUFFER_FIX),true)
+LOCAL_CFLAGS                  += -DRAW10_BUFFER_FIX
+endif
+
 ifeq ($(TARGET_USES_YCRCB_CAMERA_PREVIEW),true)
     LOCAL_CFLAGS              += -DUSE_YCRCB_CAMERA_PREVIEW
 else ifeq ($(TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW),true)
