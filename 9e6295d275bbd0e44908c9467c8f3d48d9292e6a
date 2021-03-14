@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a773f02d_0733c3d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000121
+      },
+      "writtenOn": "2021-03-14T02:31:23Z",
+      "side": 1,
+      "message": "I don\u0027t think so it is needed.",
+      "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
