@@ -33,6 +33,23 @@
       "message": "Works fine on Oneplus 7",
       "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0253bd82_c8e88f54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000089
+      },
+      "writtenOn": "2021-03-15T09:33:15Z",
+      "side": 1,
+      "message": "Tested on oneplus 7, works fine",
+      "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
