@@ -16,6 +16,23 @@
       "message": "I don\u0027t think so it is needed.",
       "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edea7e00_ed3dd516",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000089
+      },
+      "writtenOn": "2021-03-15T09:32:30Z",
+      "side": 1,
+      "message": "Works fine on Oneplus 7",
+      "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
