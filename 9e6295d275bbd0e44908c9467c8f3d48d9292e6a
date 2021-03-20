@@ -67,6 +67,23 @@
       "message": "Works on ginkgo too",
       "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2542c975_38bf8972",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000243
+      },
+      "writtenOn": "2021-03-20T16:09:33Z",
+      "side": 1,
+      "message": "it\u0027s cherry-pick of a merge?",
+      "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
