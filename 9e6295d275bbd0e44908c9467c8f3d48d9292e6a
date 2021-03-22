@@ -84,6 +84,23 @@
       "message": "it\u0027s cherry-pick of a merge?",
       "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "387477bc_f99dc1ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2021-03-22T15:58:21Z",
+      "side": 1,
+      "message": "Eh... auto tag? wtf\n",
+      "revId": "9e6295d275bbd0e44908c9467c8f3d48d9292e6a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
